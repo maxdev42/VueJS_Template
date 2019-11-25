@@ -6,30 +6,29 @@
       <p>
         Ici vous retrouverez plusieurs composants utilisants différentes méthodes de VueJS ainsi que de Boostrap et jQuery.
       </p>
-      <form target="_blank" v-bind:action="url">
-          <input class="btn btn-dark" type="submit" value="Clique ici pour aller sur mon github" />
-      </form>
+      <ButtonRedirection/>
     </div>
     <div>
-      <Card/>
+      <Card id="card"/>
     </div>
   </div>
 </template>
 <script>
 import Card from "./Card"
+import ButtonRedirection from "./ButtonRedirection"
 
 export default {
   name: 'Home',
+  props: ['url'],
     components: {
-    Card
-  },
-  data() {
-    return {
-      url: "https://github.com/maxdev42/"
-    }
+    Card,
+    ButtonRedirection
   }
+
 }
 </script>
 <style>
-  
+  #card {
+    margin : 20px;
+  }
 </style>
