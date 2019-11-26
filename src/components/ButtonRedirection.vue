@@ -5,7 +5,13 @@
 </template>
 <script>
   export default {
-    name: "ButtonRedirection"
+    name: "ButtonRedirection",
+
+    data() {
+      return {
+        url: "https://github.com/maxdev42"
+      }
+    }
   }
 </script>
 <style>

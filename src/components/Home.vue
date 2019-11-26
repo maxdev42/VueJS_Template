@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <br><br>
+    <br>
     <h2>Bienvenu sur mon template de site avec VueJS</h2>
     <div>
       <p>
@@ -19,8 +19,7 @@ import ButtonRedirection from "./ButtonRedirection"
 
 export default {
   name: 'Home',
-  props: ['url'],
-    components: {
+  components: {
     Card,
     ButtonRedirection
   }
